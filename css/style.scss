@@ -138,3 +138,40 @@ body {
     }
   }
 }
+
+.describe-container {
+  .subtitle-img {
+    margin: 6rem;
+  }
+  .quote-container {
+    position: relative;
+    font-size: 1.3rem;
+    line-height: 24px;
+    margin-bottom: 102px;
+    strong {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      background-image: url(../img/text-left.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 35px;
+      height: 40px;
+    }
+    &::before {
+      background-image: url(../img/text-left.png);
+      left: 215px;
+    }
+    &::after {
+      background-image: url(../img/text-right.png);
+      right: 215px;
+    }
+  }
+}
+

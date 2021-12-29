@@ -190,4 +190,42 @@ body {
             transform: rotate(360deg);
   }
 }
+
+.describe-container .subtitle-img {
+  margin: 6rem;
+}
+
+.describe-container .quote-container {
+  position: relative;
+  font-size: 1.3rem;
+  line-height: 24px;
+  margin-bottom: 102px;
+}
+
+.describe-container .quote-container strong {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.describe-container .quote-container::before, .describe-container .quote-container::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  background-image: url(../img/text-left.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 40px;
+}
+
+.describe-container .quote-container::before {
+  background-image: url(../img/text-left.png);
+  left: 215px;
+}
+
+.describe-container .quote-container::after {
+  background-image: url(../img/text-right.png);
+  right: 215px;
+}
 /*# sourceMappingURL=style.css.map */
