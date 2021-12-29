@@ -6,94 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>1000hour Test</title>
   <link rel="icon" href="./img/favicon.ico">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="container">
-    <!-- header start -->
-    <header class="header">
-      <h1 class="main-title">1만 시간의 법칙</h1>
-      <div class="clock">
-        <span class="graduation"></span>
-        <span class="graduation"></span>
-        <span class="graduation"></span>
-        <span class="graduation"></span>
-        <span class="graduation"></span>
-        <span class="graduation"></span>
-        <span class="hours"></span>
-        <span class="minute"></span>
-        <span class="seconds"></span>
-      </div>
-    </header>
-    <!-- header end -->
+  <!-- header start -->
+  <header class="header">
+    <h1 class="main-title"><img src="./img/title.png" alt="1시간의 법칙"></h1>
+    <div class="clock">
+      <div class="graduation"></div>
+      <div class="graduation"></div>
+      <div class="graduation"></div>
+      <div class="graduation"></div>
+      <div class="graduation"></div>
+      <div class="graduation"></div>
+      <span class="hours"></span>
+      <span class="minute"></span>
+      <span class="seconds"></span>
+    </div>
+  </header>
+  <!-- header end -->
 
-    <!-- describe start -->
-    <section class="describe-container">
-      <h2 class="text-hide">1만 시간의 법칙 소개</h2>
-      <img src="./img/text-title.png" alt="연습은 어제의 당신보다 당신을 더 낫게 만든다.">
-      <blockquote class="quote-container">
-        <p class="describe">
-          <strong>1만 시간의 법칙은</strong>은 <br>
-          어떤 분야의 전문가가 되기 위해서는 <br>
-          최소한 1만 시간의 훈련이 필요하다는 법칙이다.
-        </p>
-      </blockquote>
-    </section>
-    <!-- describe end -->
-
-    <!-- input container start -->
-    <section class="input-container">
-      <h2 class="text-hide">1만 시간의 법칙 입력 영역</h2>
-      <form method="get" class="input-form">
-        <label for="Skill">
-          나는 <input type="text" id="Skill" placeholder="예)프로그래밍" required> 전문가가 될 것이다.
-        </label>
-        <label for="Time">
-          그래서 앞으로 매일 하루에 <input type="number" id="Time" placeholder="예) 5시간" required > 시간씩 훈련할 것이다.
-        </label>
-        <button type="submit" class="btn-check">나는 며칠 동안 훈련을 해야 1만 시간이 될까??</button>
-      </form>
-    </section>
-    <!-- input container end -->
-
-    <!-- result start -->
-    <section class="result-container">
-      <h2 class="text-hide">1만 시간의 법칙 결과 화면</h2>
-      <article class="result">
-        <h3 class="text-hide">결과창</h3>
-        <p class="skill-text">
-          당신은 <strong class="skill">프로그래밍</strong>전문가가 되기 위해서
-        </p>
-        <p class="time-text">
-          대략 <strong class="time">5110</strong>일 이상 훈련하셔야 합니다! :)
-        </p>
-      </article>
-      <button type="submit" class="btn-go">훈련하러 가기 GO!GO!</button>
-      <button type="submit" class="btn-share">공유하기</button>
-    </section>
-    <!-- result end -->
-
-    <!-- modal start -->
-    <section class="modal-container">
-      <h2 class="text-hide">응원 메시지</h2>
-      <strong class="fighting-text">화이팅!!❤❤❤</strong>
-      <p class="text">당신의 꿈을 응원합니다.</p>
-      <img src="./img/licat.png" alt="라이켓 캐릭터 이미지">
-      <button type="submit" class="btn-training">종료하고 진짜 훈련하러 가기 GO!GO!</button>
-    </section>
-    <!-- modal end -->
-
-    <!-- footer start -->
-    <footer class="footer">
-      <h2 class="text-hide">회사명 그리고 저작권 내용</h2>
-      <img src="./img/logo.png" alt="weniv">
-      <p class="copyright">
-        &#8251; 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다. <br>
-        수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+  <!-- describe start -->
+  <section class="describe-container">
+    <h2 class="text-hide">1만 시간의 법칙 소개</h2>
+    <img src="./img/text-title.png" alt="연습은 어제의 당신보다 당신을 더 낫게 만든다.">
+    <blockquote class="quote-container">
+      <p class="describe">
+        <strong>1만 시간의 법칙은</strong>은 <br>
+        어떤 분야의 전문가가 되기 위해서는 <br>
+        최소한 1만 시간의 훈련이 필요하다는 법칙이다.
       </p>
-    </footer>
-    <!-- footer end -->
-  </div>
+    </blockquote>
+  </section>
+  <!-- describe end -->
+
+  <!-- input container start -->
+  <section class="input-container">
+    <h2 class="text-hide">1만 시간의 법칙 입력 영역</h2>
+    <form method="get" class="input-form">
+      <label for="Skill">
+        나는 <input type="text" id="Skill" placeholder="예)프로그래밍" required> 전문가가 될 것이다.
+      </label>
+      <label for="Time">
+        그래서 앞으로 매일 하루에 <input type="number" id="Time" placeholder="예) 5시간" required > 시간씩 훈련할 것이다.
+      </label>
+      <button type="submit" class="btn-check">나는 며칠 동안 훈련을 해야 1만 시간이 될까??</button>
+    </form>
+  </section>
+  <!-- input container end -->
+
+  <!-- result start -->
+  <section class="result-container">
+    <h2 class="text-hide">1만 시간의 법칙 결과 화면</h2>
+    <article class="result">
+      <h3 class="text-hide">결과창</h3>
+      <p class="skill-text">
+        당신은 <strong class="skill">프로그래밍</strong>전문가가 되기 위해서
+      </p>
+      <p class="time-text">
+        대략 <strong class="time">5110</strong>일 이상 훈련하셔야 합니다! :)
+      </p>
+    </article>
+    <button type="submit" class="btn-go">훈련하러 가기 GO!GO!</button>
+    <button type="submit" class="btn-share">공유하기</button>
+  </section>
+  <!-- result end -->
+
+  <!-- modal start -->
+  <section class="modal-container">
+    <h2 class="text-hide">응원 메시지</h2>
+    <strong class="fighting-text">화이팅!!❤❤❤</strong>
+    <p class="text">당신의 꿈을 응원합니다.</p>
+    <img src="./img/licat.png" alt="라이켓 캐릭터 이미지">
+    <button type="submit" class="btn-training">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+  </section>
+  <!-- modal end -->
+
+  <!-- footer start -->
+  <footer class="footer">
+    <h2 class="text-hide">회사명 그리고 저작권 내용</h2>
+    <img src="./img/logo.png" alt="weniv">
+    <p class="copyright">
+      &#8251; 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다. <br>
+      수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+    </p>
+  </footer>
+  <!-- footer end -->
 </body>
 </html>
