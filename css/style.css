@@ -24,7 +24,7 @@ body {
 [class^="btn"] {
   color: #5B2386;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 900;
   border: none;
   border-radius: 30px;
   padding: .7em 1.4em;
@@ -54,7 +54,6 @@ body {
 
 .header .main-title img {
   width: 564px;
-  height: 112px;
 }
 
 .header .clock {
@@ -210,17 +209,21 @@ body {
 }
 
 .describe-container .subtitle-img {
-  margin: 6em;
+  margin: 6em auto;
 }
 
 .describe-container .quote-container {
   position: relative;
   font-size: 1.7em;
-  line-height: 24px;
+  line-height: 28px;
   margin-bottom: 102px;
 }
 
-.describe-container .quote-container strong {
+.describe-container .quote-container .describe {
+  display: inline-block;
+}
+
+.describe-container .quote-container .describe strong {
   font-size: 2em;
   font-weight: bold;
 }
@@ -228,8 +231,6 @@ body {
 .describe-container .quote-container::before, .describe-container .quote-container::after {
   content: "";
   display: inline-block;
-  position: absolute;
-  top: 10px;
   background-image: url(../img/text-left.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -239,12 +240,12 @@ body {
 
 .describe-container .quote-container::before {
   background-image: url(../img/text-left.png);
-  left: 215px;
+  margin-right: 1em;
 }
 
 .describe-container .quote-container::after {
   background-image: url(../img/text-right.png);
-  right: 215px;
+  margin-left: 1em;
 }
 
 .input-container label {
@@ -262,8 +263,22 @@ body {
 }
 
 .input-container .btn-check {
+  position: relative;
   background-color: #FCEE21;
   margin: 5em 0 8em;
+}
+
+.input-container .btn-check::after {
+  position: absolute;
+  top: 11px;
+  right: -52px;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/click.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .result-container {
@@ -294,7 +309,32 @@ body {
   margin: 0 .3em;
 }
 
+.footer {
+  padding-bottom: 9em;
+}
+
+.footer img {
+  margin-bottom: 2em;
+}
+
+.footer .copyright {
+  font-size: 1.2em;
+  line-height: 16px;
+}
+
 .modal-container {
   display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 6px;
+  }
+  .header .main-title img {
+    width: 370px;
+  }
+  .describe-container .subtitle-img {
+    width: 380px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
