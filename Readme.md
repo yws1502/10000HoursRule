@@ -1,6 +1,13 @@
-# 10000 hours rule
+<div align="center">
+  <h1>10000 hours rule</h1>
+  
+  ![image](https://user-images.githubusercontent.com/77317312/147717709-ce79784d-33cd-440b-8f5d-e57d3c959a66.png)
 
-배포 URL : 
+  배포 URL : https://yws1502.github.io/10000HoursRule/
+
+</div>
+  
+
 
 ## 서비스 소개
 - 어떤 한 분야의 전문가가 되기 위해서는 1만시간을 채워야 한다는 법칙을 통해 전문가가 되고 싶은 분야와 하루 공부 시간 입력 시 며칠 만에 1만 시간을 채울 수 있는지 체크해주는 10000 hours rule calculator, 응원 말을 전해주는 서비스입니다.
