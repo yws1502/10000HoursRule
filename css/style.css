@@ -1,7 +1,6 @@
 /* common */
 body {
   background-color: #5B2386;
-  font-family: GmarketSansBold;
   height: 100vh;
   text-align: center;
   color: #fff;
@@ -209,7 +208,7 @@ body {
 }
 
 .describe-container .subtitle-img {
-  margin: 6em auto;
+  margin: 10em auto;
 }
 
 .describe-container .quote-container {
@@ -282,7 +281,6 @@ body {
 }
 
 .result-container {
-  display: none;
   margin-bottom: 12em;
 }
 
@@ -306,7 +304,7 @@ body {
 }
 
 .result-container [class^="btn"] {
-  margin: 0 .3em;
+  margin: .3em;
 }
 
 .footer {
@@ -326,15 +324,45 @@ body {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   body {
     font-size: 6px;
   }
+  .header .main-title {
+    top: 76px;
+  }
   .header .main-title img {
-    width: 370px;
+    max-width: 290px;
+  }
+  .header .clock {
+    width: 155px;
+    height: 155px;
+  }
+  .header .clock::before {
+    width: 170px;
+    height: 170px;
+  }
+  .header .clock .hours {
+    top: 47px;
+    left: 71px;
+  }
+  .header .clock .minute {
+    top: 31px;
+    left: 74px;
+  }
+  .header .clock .seconds {
+    top: 15px;
+    left: 74px;
+  }
+  .input-container .btn-check {
+    max-width: 225px;
+    border-radius: 15px;
+  }
+  .result-container .result [class$="text"] strong {
+    vertical-align: -9px;
   }
   .describe-container .subtitle-img {
-    width: 380px;
+    max-width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
