@@ -23,6 +23,7 @@ body {
   color: #fff;
   box-sizing: border-box;
   font-size: 10px;
+  padding: 0 3em;
 }
 
 .text-hide {
@@ -265,21 +266,30 @@ body {
   }
 }
 
-.modal-container {
+.modal-background {
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background-color: rgba(0,0,0,0.7);
   display: none;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fff;
   color: $pupple;
   border-radius: 15px;
   box-shadow: $shadow;
   max-width: 70em;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px;
   [class$="text"] {
     font-family: OTEnjoystoriesBA;
   }
   .fighting-text {
     display: block;
-    font-size: 8em;
+    font-size: 6em;
     margin-bottom: .3em;
   }
   .text {font-size: 3.5em;}
@@ -339,7 +349,7 @@ body {
   }
 
   .modal-container {
-    padding: 20px 0;
+    padding: 20px;
     .fighting-text {
       display: block;
       font-size: 6em;
