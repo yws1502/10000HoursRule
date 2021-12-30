@@ -1,6 +1,35 @@
+@font-face {
+  font-family: 'OTEnjoystoriesBA';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format("woff2"), url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format("woff"), url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format("opentype");
+}
+
 /* common */
 body {
   background-color: #5B2386;
+  font-family: GmarketSansBold;
   height: 100vh;
   text-align: center;
   color: #fff;
@@ -75,8 +104,8 @@ body {
           transform: translate(-50%, -50%);
   display: block;
   content: "";
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   width: 270px;
   height: 270px;
 }
@@ -91,8 +120,8 @@ body {
   width: 25px;
   height: 25px;
   background-color: #734177;
-  -webkit-box-shadow: 2px 2px 8px 7px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 2px 8px 7px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   border-radius: 80%;
   z-index: 10;
 }
@@ -149,8 +178,8 @@ body {
   position: absolute;
   background-color: #734177;
   border-radius: 20px;
-  -webkit-box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }
@@ -281,6 +310,7 @@ body {
 }
 
 .result-container {
+  display: none;
   margin-bottom: 12em;
 }
 
@@ -322,6 +352,42 @@ body {
 
 .modal-container {
   display: none;
+  background-color: #fff;
+  color: #5B2386;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  max-width: 70em;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.modal-container [class$="text"] {
+  font-family: OTEnjoystoriesBA;
+}
+
+.modal-container .fighting-text {
+  display: block;
+  font-size: 8em;
+  margin-bottom: .3em;
+}
+
+.modal-container .text {
+  font-size: 3.5em;
+}
+
+.modal-container img {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.modal-container .btn-training {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #FCEE21;
+  margin: 0 auto;
 }
 
 @media (max-width: 700px) {
@@ -363,6 +429,21 @@ body {
   }
   .describe-container .subtitle-img {
     max-width: 300px;
+  }
+  .modal-container {
+    padding: 20px 0;
+  }
+  .modal-container .fighting-text {
+    display: block;
+    font-size: 6em;
+    margin-bottom: .3em;
+  }
+  .modal-container img {
+    max-width: 220px;
+    margin-bottom: 2em;
+  }
+  .modal-container .btn-training {
+    background-color: #FCEE21;
   }
 }
 /*# sourceMappingURL=style.css.map */
